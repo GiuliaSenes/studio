@@ -1,0 +1,189 @@
+
+/*Header*/
+.navbar {
+    background-color: rgb(250, 61, 128);
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    padding: 1rem;
+}
+
+.logo-gs {
+    height: 3rem;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-gs:hover {
+  transform: scale(1.10);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    font-size: 1.05rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar-brand:hover {
+    color: rgba(253, 183, 213, 0.9);
+    transition-duration: 0.1s;
+    text-shadow: 0 0 8px rgb(118, 21, 97);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+/*Home*/
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    flex: 2;
+}
+
+.bio span {
+    color: rgb(250, 61, 128);
+}
+
+.bio h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.bio p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    max-width: 500px;
+}
+
+.bio-img {
+    display: flex;
+    justify-content: center;
+}
+
+.bio-img img {
+
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30%;
+}
+
+.layout {
+    display: flex;
+
+}
+
+.side {
+    flex: 1;
+    background-color: #ffd1d1c6;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+
+/* CONTATTI*/
+.form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CV*/
+.cv-container {
+    flex: 2;
+    background-color: #fff;
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cv-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cv-card {
+    background-color: #f9e7e780;
+    border-left: 4px solid rgb(250, 61, 128);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+}
+
+.cv-card h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.cv-role {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem;
+}
+
+.skills-grid span {
+    background-color: rgb(250, 61, 128);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Portfolio*/
+.alert-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+@media (max-width: 576px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .side {
+        display: none;
+    }
+
+    .bio {
+        flex: none;
+    }
+}
