@@ -1,47 +1,9 @@
 
-/*Header*/
-.navbar {
-    background-color: rgb(250, 61, 128);
-    position: sticky;
-    top: 0;
-    z-index: 2000;
-    padding: 1rem;
-}
-
-.logo-gs {
-    height: 3rem;
-    width: auto;
-    transition: transform 0.3s ease;
-}
-
-.logo-gs:hover {
-  transform: scale(1.10);
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: aliceblue;
-    font-weight: 600;
-    margin-right: 0.5rem;
-    font-size: 1.05rem;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-.navbar-brand:hover {
-    color: rgba(253, 183, 213, 0.9);
-    transition-duration: 0.1s;
-    text-shadow: 0 0 8px rgb(118, 21, 97);
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-}
-
 /*Home*/
+.navbar{
+    background-color: rgb(250, 61, 128);
+}
+
 .bio {
     display: flex;
     flex-direction: column;
@@ -163,7 +125,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 

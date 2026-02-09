@@ -15,10 +15,10 @@
     <link rel="icon" type="image/png" href="Assets/img/favicon.png">
     <link rel="apple-touch-icon" href="Assets/img/favicon.png">
 
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Assets/css/style.css">
-
-
+    
 </head>
 
 
@@ -26,27 +26,44 @@
 <body>
 
     <header>
-
-        <nav class="navbar custom-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
             <div class="container-fluid">
 
-                <a class="navbar-brand" href="./">
-                    <img src="Assets/img/favicon.png" alt="Logo Giulia Senes" class="logo-gs">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="Assets/img/favicon.png" alt="Logo" width="50" height="50"
+                        class="d-inline-block align-text-top">
                 </a>
 
-                <div class="nav-links">
-                    <a href="contatti/"> Contattami |</a>
-                    <a href="cv/"> CV |</a>
-                    <a href="portfolio/"> Portfolio |</a>
-                    <a href="./"> Home |</a>
+                <!-- Hamburger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                    aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-end">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contatti/index.html">Contattami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv/index.html">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio/index.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
         </nav>
 
     </header>
-
     <main class="layout">
         <div class="left side"></div>
 
@@ -82,7 +99,9 @@
         <p>© 2026 Giulia Senes</p>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 
